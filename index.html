@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nick Sunday | Portfolio</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Nick Sunday</h1>
+    <p>Engineer focused on backend systems, automation, and machine learning</p>
+    <nav>
+      <a href="https://github.com/nicksunday" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/nicksunday" target="_blank">LinkedIn</a>
+    </nav>
+    <button id="theme-toggle">Toggle Light/Dark</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>I'm a software engineer with over a decade of experience in infrastructure, SRE, and developer tooling. More recently, I've been exploring machine learning, research workflows, and Android app development. I enjoy building tools and systems that make other engineers and researchers more effective.</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Deepfake Music Detector</h3>
+        <p>Built a CNN in PyTorch to classify AI-generated music vs. real recordings using mel-spectrograms. Demonstrated high accuracy and used cross-validation for evaluation. <a href="https://arxiv.org/abs/2505.09633v1" target="_blank">Read the paper on arXiv</a>.</p>
+        <a href="https://github.com/nicksunday/deepfake-music-detector" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>Board Game Assistant (Android)</h3>
+        <p>A Kotlin-based Android app to track board game libraries, log plays, and sync stats with friends. Integrated BoardGameGeek API, Firebase, and Firestore for real-time data.</p>
+        <a href="https://github.com/nicksunday/board-game-assistant" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>Rules Retriever (RAG Project)</h3>
+        <p>In-progress RAG app that uses embedding search and LLMs to answer rules questions about board games. Built with FAISS, SentenceTransformers, and Streamlit UI.</p>
+        <a href="https://github.com/nicksunday/rules-retriever" target="_blank">View on GitHub</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:sunday.nick@gmail.com">sunday.nick@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Nick Sunday</p>
+  </footer>
+
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>
+
